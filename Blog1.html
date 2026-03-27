@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Intersection of Engineering and Business | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono&display=swap');
+
+        :root {
+            --bg-dark: #0f172a;
+            --accent: #6366f1;
+            --text-main: #94a3b8;
+        }
+
+        .dropcap::first-letter {
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            float: left;
+            margin-right: 0.75rem;
+            line-height: 1;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent);
+            width: 0%;
+            z-index: 100;
+            transition: width 0.1s ease;
+        }
+
+        .blog-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #64748b;
+            text-decoration: none;
+            margin-bottom: 4rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #475569;
+            margin-bottom: 4rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .content p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        .highlight-box {
+            background: rgba(99, 102, 241, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 0 1rem 1rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: #e2e8f0;
+        }
+
+        .tag {
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 4px 12px;
+            background: #1e293b;
+            color: #94a3b8;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar" id="progress"></div>
+
+    <article class="blog-container">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+
+        <header>
+            <div class="flex gap-2 mb-6">
+                <span class="tag">Engineering</span>
+                <span class="tag">Business</span>
+                <span class="tag">Innovation</span>
+            </div>
+            <h1>The Intersection of Engineering and Business</h1>
+            
+            <div class="meta">
+                <span><i class="fa-regular fa-calendar mr-2"></i> March 27, 2026</span>
+                <span><i class="fa-regular fa-clock mr-2"></i> 2 Min Read</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <p class="dropcap">
+                As an engineering student, the focus is often narrowed down to the mechanics of creation. In technical courses like <span class="text-white font-medium">ECE 120</span>, which I'm taking for my major, I focus on how to build systems from the ground up understanding the logic gates, the circuitry, and the fundamental physics that allow a machine to function.
+            </p>
+
+            <p>
+                "Understanding market viability, supply chain constraints, and the competitive landscape is what turns my projects into marketable products."
+            </p>
+
+            <p>
+                However, <span class="text-white font-medium">BADM 261</span> has shifted my perspective toward the "why." It isn't enough to simply build something that works; one must understand the ecosystem in which that product exists. 
+            </p>
+
+            <p>
+                This blend between teachings from the <span class="text-indigo-400">Grainger College of Engineering</span> and the <span class="text-indigo-400">Gies College of Business</span> has led me to have a further appreciation for and understanding of innovation and product spaces. It represents a transition from being just a developer to becoming a product-minded innovator.
+            </p>
+
+            <p>
+                Moving forward, I aim to carry this dual perspective into every circuit I design and every line of code I write.
+            </p>
+        </div>
+
+        <footer class="mt-20 pt-10 border-t border-slate-800 flex flex-col items-center">
+            <p class="text-sm text-slate-500 mb-6">Thanks for reading. Feel free to reach out to discuss the intersection of tech and business.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
+            </div>
+        </footer>
+    </article>
+
+    <script>
+        // Update reading progress bar
+        window.onscroll = function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
