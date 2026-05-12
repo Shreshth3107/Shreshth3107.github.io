@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Features to Value | T&M Reflection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono&display=swap');
+
+        :root {
+            --bg-dark: #0f172a;
+            --accent: #6366f1;
+            --text-main: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent);
+            width: 0%;
+            z-index: 100;
+            transition: width 0.1s ease;
+        }
+
+        .blog-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #64748b;
+            text-decoration: none;
+            margin-bottom: 4rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #475569;
+            margin-bottom: 4rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .content p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        .tag {
+            font-size: 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 4px 12px;
+            background: #1e293b;
+            color: #94a3b8;
+            border-radius: 999px;
+        }
+
+        .dropcap::first-letter {
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            float: left;
+            margin-right: 0.75rem;
+            line-height: 1;
+        }
+
+        .highlight {
+            color: white;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1e293b;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="scrollIndicator"></div>
+
+    <div class="blog-container">
+        <a href="#" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to Journal
+        </a>
+
+        <header>
+            <div class="flex gap-2 mb-6">
+                <span class="tag">Reflections</span>
+                <span class="tag">Career Strategy</span>
+            </div>
+            <h1>From Features to Value: A Shift in Perspective</h1>
+            <div class="meta">
+                <span><i class="fa-regular fa-calendar-days mr-2"></i> MAY 11, 2026</span>
+                <span><i class="fa-regular fa-clock mr-2"></i> 5 MIN READ</span>
+            </div>
+        </header>
+
+        <article class="content">
+            <p class="dropcap">
+                I spent most of my academic career focusing on technical skills. I learned the frameworks, passed the interviews, and secured job offers. It seemed like a solid plan. However, after a semester of conversations with professionals in technology and management, my perspective shifted. 
+            </p>
+
+            <p>
+                The key takeaway wasn't that technical skills don't matter. They do, a lot. Nearly every guest speaker this semester made the same point about technical ability helping you get a foot in the door. What you do once you're inside requires a different set of skills. Most students, including myself, haven't spent much time developing them. 
+            </p>
+
+            <p>
+                <span class="highlight">"Talent and hard work alone rarely make a difference. How you present yourself and how you make others feel influence the opportunities that come your way."</span> Professor Mark Wolters explained this clearly while discussing charisma and personal branding. The way he framed it struck me. Presence, active listening, and confident communication are skills you can learn and improve. This change in perspective was significant.
+            </p>
+
+            <p>
+                Steve Lalla and Steve Baker shared the same idea from another viewpoint. They argued that the professionals who become most valuable to their organizations are rarely the top specialists in one area. Instead, they are the ones who have enough knowledge to understand how their role fits into the bigger picture and the empathy to communicate beyond their expertise. <span class="highlight">Being well rounded isn't just a fallback for not excelling in one area; it is its own advantage.</span>
+            </p>
+
+            <p>
+                The toughest lesson to accept came from the entrepreneurship simulation in Week 5. I entered intending to plan carefully and execute effectively. However, the simulation rewarded quick actions, gathering feedback, and viewing early failures as data rather than judgments. This aligned with the GE FastWorks framework we studied, which emphasized that in uncertain situations, the goal is not to have a perfect start but to minimize the cost of being wrong. 
+            </p>
+
+            <p>
+                I left that week with a phrase I keep reflecting on: <span class="highlight">Validated learning is more valuable than initial ROI.</span> Rachel Owen clarified what this looks like in practice as a leader. She termed it as "rigid flexibility"—sticking to your goals while being open to changing how you achieve them. George Ploss highlighted the social aspect of this. In large, resource rich firms, your network is your net worth. The connections and reputation you build over the years lend credibility to your ideas. 
+            </p>
+
+            <p>
+                The interview panel with Mark, Karin, and James brought everything back to the immediate future. Karin's point about researching a company before interviews resonated with me the most, not just as a practical tip, but as a sign of something deeper. Interviewers can tell the difference between a candidate who has memorized answers and one who is genuinely curious about the organization. 
+            </p>
+
+            <p>
+                That curiosity, it turns out, makes a strong interview memorable. Reflecting on the semester, the professionals I admire the most are not necessarily the most knowledgeable. They are the ones who stay curious, learn from their mistakes, build real relationships, and understand that technology serves human goals and not the other way around. 
+            </p>
+
+            <p>
+                These are the habits I'm taking with me. I can continue to learn technical skills, but these require a more intentional effort: <span class="highlight">the choice to prioritise them.</span>
+            </p>
+        </article>
+
+        <footer>
+            &copy; 2026 T&M PROGRAM REFLECTION • BUILT WITH INTENTION
+        </footer>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollIndicator").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
